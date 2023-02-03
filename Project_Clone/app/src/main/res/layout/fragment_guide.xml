@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".running.GuideFragment">
+<LinearLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <!--First 가로 스크롤뷰-->
+    <HorizontalScrollView
+        android:scrollbarThumbHorizontal="@null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <!--스크롤뷰를 감싸는 리니어레이아웃-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--첫번째 항목-->
+        <LinearLayout
+            android:id="@+id/save"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/run_g_1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="저장됨"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="러닝 0회"/>
+        </LinearLayout>
+
+            <!--2번째-->
+            <LinearLayout
+                android:id="@+id/all_run"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/run_g_2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="모든 러닝"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="러닝 26회"/>
+            </LinearLayout>
+            <!--3번째-->
+            <LinearLayout
+                android:id="@+id/fin"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/run_g_3"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="완료됨"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="러닝 0회"/>
+            </LinearLayout>
+            <!--4번째-->
+            <LinearLayout
+                android:id="@+id/download"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/run_g_4"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="다운로드 완료"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="러닝 0회"/>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!--Second 가로 스크롤뷰-->
+    <HorizontalScrollView
+        android:scrollbarThumbHorizontal="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--첫번째 항목-->
+                <LinearLayout
+                    android:id="@+id/run_7m"
+                    android:layout_margin="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:scaleType="fitCenter"
+                        android:layout_width="350dp"
+                        android:layout_height="300dp"
+                        android:src="@drawable/run_g1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="7분 운동 · 회복 러닝"/>
+                </LinearLayout>
+            <!--두번째 항목-->
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:scaleType="fitCenter"
+                    android:layout_width="350dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/run_g2"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15분 운동 · 회복 러닝"/>
+            </LinearLayout>
+            <!--세번째 항목-->
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:scaleType="fitCenter"
+                    android:layout_width="350dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/run_g3"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25분 운동 · 스피드 런"/>
+            </LinearLayout>
+            <!--네번째 항목-->
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:scaleType="fitCenter"
+                    android:layout_width="350dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/run_g4"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24분 운동 · 회복 러닝"/>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/h3"
+            android:text="컬렉션 시작하기"
+            android:textSize="18dp"
+            android:layout_marginBottom="15dp"
+            style="@style/tv1"/>
+        <TextView
+            style="@style/tv2"
+            android:layout_alignParentRight="true"
+            android:text="전체"/>
+        <TextView
+            android:layout_below="@+id/h3"
+            android:text="러닝 유형을 살펴본 후 시작하기"
+            style="@style/below_title"
+            android:textSize="22dp"/>
+    </RelativeLayout>
+    <!--컬렉션 시작하기 리사이클러뷰-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recv_collection"/>
+
+    <!--단거리러닝타이틀-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/short_d"
+            android:text="단거리 러닝"
+            android:textSize="18dp"
+            android:layout_marginBottom="15dp"
+            style="@style/tv1"/>
+        <TextView
+            style="@style/tv2"
+            android:layout_alignParentRight="true"
+            android:text="전체"/>
+        <TextView
+            android:layout_below="@+id/short_d"
+            android:text="러닝 시작하기(30분 미만)"
+            style="@style/below_title"
+            android:textSize="22dp"/>
+    </RelativeLayout>
+    <!--단거리러닝 가로 스크롤뷰-->
+    <HorizontalScrollView
+        android:scrollbarThumbHorizontal="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--첫번째 항목-->
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/run_short_1"/>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25분 운동 · 스피드 런"/>
+        </LinearLayout>
+        <!--두번째 항목-->
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/run_short_2"/>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25분 운동 · 스피드 런"/>
+        </LinearLayout>
+        <!--세번째 항목-->
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/run_short_3"/>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25분 운동 · 스피드 런"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </HorizontalScrollView>
+
+    <!--장거리 러닝-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/long_d"
+            android:textSize="18dp"
+            android:layout_marginBottom="15dp"
+            android:text="장거리 러닝"
+            style="@style/tv1"/>
+        <TextView
+            style="@style/tv2"
+            android:layout_alignParentRight="true"
+            android:text="전체"/>
+        <TextView
+            android:layout_below="@+id/long_d"
+            android:text="러닝으로 지구력 키우기(30분 이상)"
+            style="@style/below_title"
+            android:textSize="22dp"          />
+    </RelativeLayout>
+    <!--장거리러닝 가로 스크롤뷰-->
+    <HorizontalScrollView
+        android:scrollbarThumbHorizontal="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--첫번째 항목-->
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/run_long_1"/>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25분 운동 · 스피드 런"/>
+        </LinearLayout>
+        <!--두번째 항목-->
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/run_long_2"/>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25분 운동 · 스피드 런"/>
+        </LinearLayout>
+    </LinearLayout>
+    </HorizontalScrollView>
+
+    <!--스피드러닝 -->
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/speed"
+            android:text="스피드러닝"
+            style="@style/tv1"/>
+        <TextView
+            style="@style/tv2"
+            android:layout_alignParentRight="true"
+            android:text="전체"/>
+        <TextView
+            android:layout_below="@+id/speed"
+            android:text="스피드를 향상시켜주는 인터벌 운동"
+            style="@style/below_title"
+            android:textSize="22dp"/>
+    </RelativeLayout>
+    <!--스피드러닝 리사이클러뷰-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recv_speed"/>
+
+    <!--Mindful Running-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/m"
+            android:text="Mindful Running"
+            android:textSize="15dp"
+            style="@style/tv1"/>
+        <TextView
+            style="@style/tv2"
+            android:layout_alignParentRight="true"
+            android:text="전체"/>
+        <TextView
+            android:layout_below="@+id/m"
+            android:text="Connect your minde ad body with mindfulness runs. Audio in English."
+            style="@style/below_title"
+            android:textSize="22dp"/>
+    </RelativeLayout>
+
+    <!--mindful running 리사이클러뷰-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recv_mind"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/t"
+            android:text="Treadmil Runs"
+            android:textSize="15dp"
+            style="@style/tv1"/>
+        <TextView
+            style="@style/tv2"
+            android:layout_alignParentRight="true"
+            android:text="전체"/>
+        <TextView
+            android:layout_below="@+id/t"
+            android:text="Runs made for the treadmill. Audio in English."
+            style="@style/below_title"
+            android:textSize="22dp"/>
+    </RelativeLayout>
+
+    <!--Treadmill Runs : 리사이클러뷰-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recv_tread"/>
+
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>
